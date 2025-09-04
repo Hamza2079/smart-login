@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>login</title>
+
+		<link rel="stylesheet" href="css/all.min.css">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body>
+
+		<section>
+			<div class="container py-5">
+					<div class="login-box my-5 w-75 mx-auto shadow-lg p-5 d-flex flex-column justify-content-center align-items-center">
+						<h1 class="text-center text-info">Smart Login System</h1>
+						<input class="my-3 bg-transparent text-bg-primary p-2 rounded w-100 border border-white" type="email" class="form-control" placeholder="Email" id="email-login">
+						<input class="my-3 bg-transparent text-bg-primary p-2 rounded w-100 border border-white" type="password" class="form-control" placeholder="Password" id="password-login">
+						<p class="text-danger d-none" id="error-message">All inputs is required</p>
+						<p class="text-danger d-none" id="incorrect-message">incorrect email or password</p>
+						<button class="btn btn-outline-info p-2 rounded w-100" onclick="login()">Login</button>
+						<p class="text-center text-white my-3">Don’t have an account? <a href="html/sign up.html" class="text-white ">Sign Up</a></p>
+					</div>
+			</div>
+		</section>
+
+        <script src="js/bootstrap.bundle.min.js"></script>
+		<script src="js/main.js"></script>
+
+	</body>
+</html>

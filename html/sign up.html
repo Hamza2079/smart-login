@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>signup</title>
+
+		<link rel="stylesheet" href="../css/all.min.css">
+		<link rel="stylesheet" href="../css/bootstrap.min.css">
+		<link rel="stylesheet" href="../css/signup.css" />
+	</head>
+	<body>
+        
+		<section>
+			<div class="container py-5">
+					<div class="login-box my-5 w-75 mx-auto shadow-lg p-5 d-flex flex-column justify-content-center align-items-center">
+						<h1 class="text-center text-info">Smart Login System</h1>
+						<input class="my-3 bg-transparent text-bg-primary p-2 rounded w-100 border border-white" type="text" class="form-control" placeholder="Name" id="name-signup">
+						<input class="my-3 bg-transparent text-bg-primary p-2 rounded w-100 border border-white" type="email" class="form-control" placeholder="Email" id="email-signup">
+						<input class="my-3 bg-transparent text-bg-primary p-2 rounded w-100 border border-white" type="password" class="form-control" placeholder="Password" id="password-signup">
+						<p class="text-danger d-none" id="email-message">email already exists</p>
+						<p class="text-danger d-none" id="email-alert">this is not an email</p>
+						<p class="text-danger d-none" id="password-message">Password must be at least 4 characters long and include an uppercase letter, a lowercase letter, and a number. Please try again.</p>
+						<p class="text-danger d-none" id="name-message">name must be at least 2 characters</p>
+						<p class="text-success d-none" id="success-message">success</p>
+						<button class="btn btn-outline-info p-2 rounded w-100" onclick="adduser()">sign up</button>
+						<p class="text-center text-white my-3">Already have an account? <a href="../index.html" class="text-white ">log in</a></p>
+
+					</div>
+			</div>
+		</section>
+
+        <script src="../js/bootstrap.bundle.min.js"></script>
+		<script src="../js/signup.js"></script>
+
+	</body>
+</html>

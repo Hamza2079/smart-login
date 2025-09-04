@@ -1,0 +1,10 @@
+body{
+    background-color: #24353F;
+}
+
+.login-box a {
+  text-decoration: none;
+}
+.login-box a:hover, .login-box a:focus {
+  text-decoration: underline;
+}
