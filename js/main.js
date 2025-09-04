@@ -12,7 +12,7 @@ function login() {
 					localStorage.setItem("currentuser", JSON.stringify(userlist[i]));
 					emailLoginInput.value = "";
 					passwordLoginInput.value = "";
-					window.location.href = "../html/home.html";
+					window.location.href = "html/home.html";
 				}
 				checklogin();
 
