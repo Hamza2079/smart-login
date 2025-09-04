@@ -2,6 +2,7 @@ var emailLoginInput = document.getElementById("email-login");
 var passwordLoginInput = document.getElementById("password-login");
 
 function login() {
+	checklogin()
 		if (localStorage.getItem("users") != null) {
 			var userlist = JSON.parse(localStorage.getItem("users"));
 			for (let i = 0; i < userlist.length; i++) {
@@ -13,8 +14,14 @@ function login() {
 					passwordLoginInput.value = "";
 					window.location.href = "../html/home.html";
 				}
+				checklogin();
 
-				else if ( emailLoginInput.value == '' ||  passwordLoginInput.value == '') {
+			}
+		}
+	}
+
+function checklogin() {
+	if ( emailLoginInput.value == '' ||  passwordLoginInput.value == '') {
 					document.getElementById("error-message").classList.remove("d-none");
 					document.getElementById("incorrect-message").classList.add("d-none");
 				}
@@ -22,6 +29,4 @@ function login() {
 					document.getElementById("incorrect-message").classList.remove("d-none");
 					document.getElementById("error-message").classList.add("d-none");
 				}
-			}	
-}
 }
