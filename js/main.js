@@ -14,7 +14,7 @@ function login() {
 					passwordLoginInput.value = "";
 					window.location.href = "html/home.html";
 				}
-				checklogin();
+				// checklogin();
 
 			}
 		}
